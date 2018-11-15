@@ -1,0 +1,8 @@
+
+.header {
+    height: 840px;
+    position: relative;
+    background-image: url("/images/header_logo.png");
+    background-size: cover;
+    color: #FFFFFF;
+}

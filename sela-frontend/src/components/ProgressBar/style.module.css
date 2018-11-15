@@ -1,0 +1,31 @@
+.progressBarContainer {
+  width: 183px;
+  height: 28px;
+  overflow: hidden;
+  font-weight: 600;
+  text-align: center;
+  font-size: 12px;
+  border-radius: 5px;
+}
+
+.bar {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  padding-top: 5px;
+  background-color: #F2F2F2;
+  color: #333333;
+}
+
+.topBar {
+  overflow: hidden;
+  text-overflow: clip;
+  background-color: #2D9CDB;
+  color: #FFFFFF;
+}
+
+.contentText {
+  width: 183px;
+}

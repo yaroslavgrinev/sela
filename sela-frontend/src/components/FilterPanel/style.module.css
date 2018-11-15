@@ -1,0 +1,55 @@
+.filterPanel {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+  
+.caption {
+  color: #333333;
+  font-size: 30px;
+}
+
+.panel {
+  padding: 0;
+  margin: 0;
+  display: flex;  
+  user-select: none;
+}
+
+.panel li {
+  width: 229px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  border: 1px solid #2D9CDB;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.panel li:first-child {
+  color: #333333;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.panel li:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.panel li:not(:first-child) {
+  background-color: #2D9CDB;
+  transition: background-color 300ms;
+  cursor: pointer;
+}
+
+.panel li:not(:first-child):hover {
+  background-color: #58b7ec;
+  border: #58b7ec;
+}
+
+.panel li span {
+  margin-right: 13px;
+}

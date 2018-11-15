@@ -1,0 +1,68 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Construction of Borehole",
+      "logo": "http://localhost:5000/project_1.png",
+      "status": "toBeCompleted",
+      "location": "Ikkorodu, Lagos",
+      "budget": 50000,
+      "gained": 45000,
+      "description": "The people of Ikorodu have long sought for a solution to the perennial water crisis plaguing the community. Help came when community members took actionand decided to solve the problem",
+      "contractors": [
+        { "avatar": "http://localhost:5000/contractor_1.png", "name": "Contractor 1" },
+        { "avatar": "http://localhost:5000/contractor_2.png", "name": "Contractor 2" }
+      ],
+      "startDate": "Thu Nov 15 2018 14:40:30 GMT+0200 (EET)",
+      "endDate": "Thu Nov 19 2018 14:40:30 GMT+0200 (EET)"
+    },
+    {
+      "id": 2,
+      "title": "Renovation of Classrooms",
+      "logo": "http://localhost:5000/project_2.png",
+      "status": "toBeDefaulted",
+      "location": "Benin City, Eco",
+      "budget": 5000,
+      "gained": 0,
+      "description": "Education remains the only sure way to guarantee the future of the next generation. This project is expected to change the poor educational facilities that have made it difficult for students",
+      "contractors": [
+        { "avatar": "http://localhost:5000/contractor_3.png", "name": "Contractor 3" },
+        { "avatar": "http://localhost:5000/contractor_4.png", "name": "Contractor 4" }
+      ],
+      "startDate": "Thu Nov 25 2018 14:40:30 GMT+0200 (EET)",
+      "endDate": "Thu Nov 27 2018 14:40:30 GMT+0200 (EET)"
+    },
+    {
+      "id": 3,
+      "title": "Rebuilding the Tema Bridge",
+      "logo": "http://localhost:5000/project_3.png",
+      "status": "completed",
+      "location": "Gold Coast, Ghana",
+      "budget": 70000,
+      "gained": 70000,
+      "description": "This project involves the rebuilding of the Tema bridge which was destroyed by erosion in 2014. Contractors submitted bids and went through a competitive series of steps before they were selected",
+      "contractors": [
+        { "avatar": "http://localhost:5000/contractor_5.png", "name": "Contractor 5" },
+        { "avatar": "http://localhost:5000/contractor_6.png", "name": "Contractor 6" }
+      ],
+      "startDate": "Thu Nov 19 2018 14:40:30 GMT+0200 (EET)",
+      "endDate": "Thu Nov 22 2018 14:40:30 GMT+0200 (EET)"
+    },
+    {
+      "id": 4,
+      "title": "Repair of Eroded Road",
+      "logo": "http://localhost:5000/project_4.png",
+      "status": "defaulted",
+      "location": "Yenagoa, Bayelsa",
+      "budget": 5000,
+      "gained": 0,
+      "description": "This project will involve the repair of the Yenagoa road destroyed due to the impact of erosion. It will be done within the dry season of the year to ensure the work is not interrupted by the rains",
+      "contractors": [
+        { "avatar": "http://localhost:5000/contractor_7.png", "name": "Contractor 7" },
+        { "avatar": "http://localhost:5000/contractor_8.png", "name": "Contractor 8" }
+      ],
+      "startDate": "Thu Nov 15 2018 14:40:30 GMT+0200 (EET)",
+      "endDate": "Thu Nov 27 2018 14:40:30 GMT+0200 (EET)"
+    }
+  ]
+}
