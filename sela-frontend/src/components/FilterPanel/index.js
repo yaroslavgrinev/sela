@@ -12,7 +12,7 @@ const propTypes = {
   onFilter: func.isRequired,
 };
 
-const FilterPanel = ({
+export const FilterPanel = ({
   activeFilter,
   filterValue,
   onFilter,
@@ -44,4 +44,3 @@ const FilterPanel = ({
 
 FilterPanel.propTypes = propTypes;
 
-export default FilterPanel;

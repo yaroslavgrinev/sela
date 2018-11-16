@@ -10,12 +10,10 @@ const propTypes = {
   ]),
 };
 
-const Page = React.forwardRef(({ children }, ref) => (
+export const Page = React.forwardRef(({ children }, ref) => (
   <main ref={ref} className={css.page}>
       {children}
   </main>
 ));
 
 Page.propTypes = propTypes;
-
-export default Page;

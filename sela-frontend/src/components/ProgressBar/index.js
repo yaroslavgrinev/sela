@@ -9,7 +9,7 @@ const propTypes = {
   className: string.isRequired,
 };
 
-const ProgressBar = ({
+export const ProgressBar = ({
   completed,
   className
 }) => (
@@ -40,4 +40,3 @@ const ProgressBar = ({
 
 ProgressBar.propTypes = propTypes;
 
-export default ProgressBar;

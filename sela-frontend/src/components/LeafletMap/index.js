@@ -17,7 +17,7 @@ const propTypes = {
   currentLocation: string.isRequired,
 };
 
-const LeafletMap = ({
+export const LeafletMap = ({
   tileLayer,
   tileAttribution,
   mapCenter,
@@ -58,4 +58,3 @@ LeafletMap.defaultProps = {
 };
 LeafletMap.propTypes = propTypes;
 
-export default LeafletMap;

@@ -21,7 +21,7 @@ const propTypes = {
   })),
 };
 
-const Cards = ({ cards }) => (
+export const Cards = ({ cards }) => (
   <ul className={css.cards}>
     {
       cards.map((card) => (
@@ -32,5 +32,3 @@ const Cards = ({ cards }) => (
 );
 
 Cards.propTypes = propTypes;
-
-export default Cards;

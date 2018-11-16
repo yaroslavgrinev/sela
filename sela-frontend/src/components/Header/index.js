@@ -10,12 +10,10 @@ const propTypes = {
     ]),
 };
 
-const Header = ({ children }) => (
+export const Header = ({ children }) => (
     <header className={css.header}>
         {children}
     </header>
 );
 
 Header.propTypes = propTypes;
-
-export default Header;

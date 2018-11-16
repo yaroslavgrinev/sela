@@ -3,28 +3,28 @@ import { arrayOf, bool, object, func } from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import {
+  tileLayer,
+  tileAttribution,
+  mapCenter,
+  zoomLevel,
+  markers
+} from '../../constants/map';
+
+import {
   Header,
   LeafletMap,
   Page,
   Cards,
   FilterPanel,
   Footer,
+  HeaderContent,
 } from '../../components';
 
-import HeaderContent from './HeaderContent';
 import connectHOC from './connect';
 
 import css from './style.module.css';
 
-const tileLayer = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
-const tileAttribution = '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>';
 
-const mapCenter = [56.9369013,24.0812393];
-const zoomLevel = 15;
-
-const markers = [
-  { coords: [56.9369013,24.0812393], caption: 'Some place' },
-];
 
 const propTypes = {
   isLoading: bool.isRequired,
@@ -32,7 +32,7 @@ const propTypes = {
   load: func.isRequired,
 };
 
-class App extends Component {
+class AppContainer extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -72,7 +72,6 @@ class App extends Component {
 
   static getDerivedStateFromProps(props, state) {
     if (props.projects.length !== state.projects.length) {
-      console.log(props.projects, state.projects)
       return { projects: props.projects };
     }
 
@@ -111,6 +110,6 @@ class App extends Component {
   }
 }
 
-App.propTypes = propTypes;
+AppContainer.propTypes = propTypes;
 
-export default connectHOC(App);
+export const App = connectHOC(AppContainer);

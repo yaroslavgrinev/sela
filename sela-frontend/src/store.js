@@ -1,7 +1,7 @@
 import { createStore, applyMiddleware, compose } from 'redux';
 import createSagaMiddleware from 'redux-saga';
 
-import projectsReducer from './reducers/projects';
+import rootReducer from './reducers';
 import projectSaga from './sagas/project';
 
 export default function configureStore(initialState) {
@@ -17,7 +17,7 @@ export default function configureStore(initialState) {
   ];
 
   const store = createStore(
-      projectsReducer,
+      rootReducer,
       initialState,
       compose(...enhancers)
   );

@@ -1,4 +1,4 @@
-import * as c from './constants';
+import * as c from '../types/projects';
 
 export const loadProjects = () => ({
     type: c.LOAD_PROJECTS_REQUEST,

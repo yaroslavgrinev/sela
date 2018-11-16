@@ -9,7 +9,7 @@ const propTypes = {
   className: string.isRequired,
 };
 
-const Badge = ({
+export const Badge = ({
   text,
   color,
   className
@@ -25,4 +25,3 @@ const Badge = ({
 
 Badge.propTypes = propTypes;
 
-export default Badge;

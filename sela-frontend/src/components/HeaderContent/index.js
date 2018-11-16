@@ -8,7 +8,7 @@ const propTypes = {
   onScroll: func.isRequired,
 };
 
-const HeaderContent = ({ onScroll }) => (
+export const HeaderContent = ({ onScroll }) => (
   <div className={css.shadowCurtain}>
     <div className={css.logoBox}>Sela</div>
     <h2 className={css.shortDescription}>
@@ -26,5 +26,3 @@ const HeaderContent = ({ onScroll }) => (
 );
 
 HeaderContent.propTypes = propTypes;
-
-export default HeaderContent;

@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { loadProjects } from '../../reducers/projects/actions';
+import { loadProjects } from '../../actions/projects';
 
 const mapStateToProps = (store) => {
   const {
